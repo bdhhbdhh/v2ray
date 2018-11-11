@@ -8,14 +8,14 @@ RUN /tmp/go.sh
 
 FROM alpine:latest
 
-ENV CONFIG=none
+ENV CONFIG=""
 
 COPY --from=builder /usr/bin/v2ray/v2ray /usr/bin/v2ray/
 COPY --from=builder /usr/bin/v2ray/v2ctl /usr/bin/v2ray/
 COPY --from=builder /usr/bin/v2ray/geoip.dat /usr/bin/v2ray/
 COPY --from=builder /usr/bin/v2ray/geosite.dat /usr/bin/v2ray/
-COPY --from=builder /usr/bin/v2ray/config.json /etc/v2ray/
 
+ADD config.json /etc/v2ray/config.json
 ADD entrypoint.sh /entrypoint.sh
 
 RUN set -ex && \
