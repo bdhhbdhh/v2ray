@@ -28,6 +28,6 @@ RUN set -ex && \
     chmod +x /entrypoint.sh
 ENV PATH /usr/bin/v2ray:$PATH
 
-ENTRYPOINT /entrypoint.sh
+CMD /entrypoint.sh
 
 EXPOSE 8080
