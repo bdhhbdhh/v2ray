@@ -15,8 +15,8 @@ COPY --from=builder /usr/bin/v2ray/v2ctl /usr/bin/v2ray/
 COPY --from=builder /usr/bin/v2ray/geoip.dat /usr/bin/v2ray/
 COPY --from=builder /usr/bin/v2ray/geosite.dat /usr/bin/v2ray/
 
-ADD config.json /etc/v2ray/config.json
-ADD entrypoint.sh /entrypoint.sh
+ADD entrypoint.sh /
+ADD config.json /etc/v2ray/
 
 RUN set -ex && \
     apk --no-cache add ca-certificates && \
