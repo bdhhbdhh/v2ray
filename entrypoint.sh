@@ -1,2 +1,2 @@
-echo -e "$CONFIG" > /usr/bin/v2ray/config.json
-v2ray -config=/usr/bin/v2ray/config.json
+echo -e "$CONFIG" > /etc/v2ray/config.json
+v2ray -config=/etc/v2ray/config.json
