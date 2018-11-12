@@ -17,9 +17,7 @@ ADD entrypoint.sh /
 ADD config.json /etc/v2ray/
 
 RUN set -ex && \
-    apk --no-cache add ca-certificates tzdata && \
-    cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
-    echo "Asia/Shanghai" > /etc/timezone && \
+    apk --no-cache add ca-certificates && \
     mkdir /var/log/v2ray/ && \
     chmod -R g+rwX /etc/v2ray && \ 
     chmod -R g+rwX /var/log/v2ray && \ 
