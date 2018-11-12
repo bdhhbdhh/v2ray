@@ -10,6 +10,9 @@
                 "id": "da70fa56-a09b-413c-81bf-65536c5f1a22",
                 "alterId": 64
             }]
+        },
+        "streamSettings": {
+            "network": "ws"
         }
     }],
     "outbounds": [{
