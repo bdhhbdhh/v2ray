@@ -9,7 +9,7 @@ The default config are:
 
 # Environment Variables
 When you start the V2Ray image, you can pass the config by passing an environment variable on the docker run command line.
-#### **CONFIG**
+- CONFIG  
 This variable is specifies the json format config.
 
 # Using a custom config file
