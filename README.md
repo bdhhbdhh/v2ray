@@ -14,3 +14,6 @@ This variable is specifies the json format config.
 
 # Using a custom config file
 The default config for V2Ray can be found in /etc/v2ray/config.json. You can mount your specifie config file by -v params on the docker run command line.
+---
+---
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
