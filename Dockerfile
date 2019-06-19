@@ -28,6 +28,6 @@ RUN set -ex && \
 ENV CONFIG=""    
 ENV PATH /usr/bin/v2ray:$PATH
 
-ENTRYPOINT /entrypoint.sh
+CMD /entrypoint.sh
 
 EXPOSE 8080
