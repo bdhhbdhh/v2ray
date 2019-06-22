@@ -4,7 +4,7 @@ The following command use default config starts a V2Ray container.
 
 The default config are:
 > id: da70fa56-a09b-413c-81bf-65536c5f1a22  
-> alterId: 22  
+> alterId: 64  
 > port: 8080
 
 # Environment Variables
