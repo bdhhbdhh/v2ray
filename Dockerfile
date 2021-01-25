@@ -29,5 +29,6 @@ ENV CONFIG=""
 ENV PATH /usr/bin/v2ray:$PATH
 
 EXPOSE 443
+EXPOSE 8080
 
 CMD /entrypoint.sh
