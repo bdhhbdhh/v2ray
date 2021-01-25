@@ -28,4 +28,6 @@ RUN set -ex && \
 ENV CONFIG=""    
 ENV PATH /usr/bin/v2ray:$PATH
 
+EXPOSE 443
+
 CMD /entrypoint.sh
